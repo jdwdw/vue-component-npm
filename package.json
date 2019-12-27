@@ -1,10 +1,11 @@
 {
-  "name": "jdwdw-vue-component-npm",
+  "name": "dw-test-component",
   "description": "vue,component,npm",
   "version": "1.0.0",
   "author": "jdwdw",
   "license": "MIT",
-  "private": true,
+  "private": false,
+  "main": "dist/dw-test-component.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
@@ -31,5 +32,19 @@
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
-  }
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "keywords": [
+    "vue",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdwdw/vue-component-npm.git"
+  },
+  "homepage": "https://github.com/jdwdw/vue-component-npm"
 }

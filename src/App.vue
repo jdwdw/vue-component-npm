@@ -16,12 +16,24 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    <button-test :data="{name:1}" />
+    <button-test-two :data="{name:2}" />
+    <button-test-three :data="{name:3}" />
   </div>
 </template>
 
 <script>
+// import ButtonTestThree from './packages/button-test-three/button-test-three'
+// import ButtonTest from './packages/button-test/button-test'
+// import ButtonTestTwo from './packages/button-test/button-test-two'
+import {ButtonTestThree,ButtonTest,ButtonTestTwo} from '../dist/dw-test-component'
 export default {
   name: 'app',
+    components: {
+    'button-test-three': ButtonTestThree,
+    'button-test': ButtonTest,
+    'button-test-two': ButtonTestTwo,
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
